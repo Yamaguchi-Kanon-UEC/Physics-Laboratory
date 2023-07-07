@@ -3,7 +3,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{csvsimple}
-\usepackage{dcolumn}
+% \usepackage{dcolumn}
 \usepackage{siunitx}
 \usepackage{url}
 
@@ -35,14 +35,14 @@ RLC直列回路を作成し，電流の減衰振動，過減衰を観測する�
 と表せる．この方程式の解は，$\gamma$と$\omega$の大きさに依る．
 
 \subsection{臨界減衰}\label{sec:LD}
-$\gamma = \omega$のとき，$I_0=I(t=0)$，$\dot{I}_0=\dot{I}(t=0)$とすると，式\ref{current-eq}の解は，
+$\gamma = \omega$のとき，$I_0=I(t=0)$，$\dot{I}_0=\dot{I}(t=0)$とすると，式(\ref{current-eq})の解は，
 \begin{align}
     I &= e^{-\gamma t}\left( I_0 + \left( \dot{I}_0+\gamma I_0 \right)t\right)
 \end{align}
 である．
 
 \subsection{減衰振動}\label{sec:DO}
-$\gamma < \omega$のとき，$\omega'=\sqrt{\omega^2 - \gamma^2}$，$I_0=I(t=0)$，$\dot{I}_0=\dot{I}(t=0)$，$e^a=A=\sqrt{\left( {\dfrac{\dot{I}_0+\gamma I_0}{\omega'}} \right)^2 + {I_0}^2}$とし，$\theta$を$\sin{\theta}=\dfrac{I_0}{A}$，$\cos{\theta}=\dfrac{\dot{I}_0+\gamma I_0}{\omega'A}$を満たす実数とすると，式\ref{current-eq}の解は，
+$\gamma < \omega$のとき，$\omega'=\sqrt{\omega^2 - \gamma^2}$，$I_0=I(t=0)$，$\dot{I}_0=\dot{I}(t=0)$，$e^a=A=\sqrt{\left( {\dfrac{\dot{I}_0+\gamma I_0}{\omega'}} \right)^2 + {I_0}^2}$とし，$\theta$を$\sin{\theta}=\dfrac{I_0}{A}$，$\cos{\theta}=\dfrac{\dot{I}_0+\gamma I_0}{\omega'A}$を満たす実数とすると，式(\ref{current-eq})の解は，
 \begin{align}
     I &= e^{-\gamma t}\left( I_0\cos{\omega't} + \dfrac{\dot{I}_0+\gamma I_0}{\omega'}\sin{\omega't}\right)\\
     &= e^{-\gamma t + a} \sin\left( \omega't + \theta \right)
@@ -68,13 +68,13 @@ $V_n=RI_n$は，
     |V_n| = e^{-\gamma t_n + a}R\sin \Delta\theta
 \end{equation}
 を満たすが，この対数を取ると，
-\begin{equation}
+\begin{equation}\label{eq:DOlnV}
     \ln{|V_n|} = -\gamma t_n + a + \ln{R} + \ln{\sin\Delta\theta}
 \end{equation}
 となり，$\ln{|V_n|}$と$t_n$の関係が一次関数で表される．$\gamma$を求める上でこれは都合がよい．
 
 \subsection{過減衰}\label{sec:OD}
-$\gamma > \omega$のとき，$\omega'=\sqrt{\gamma^2 - \omega^2}$，$I_0=I(t=0)$，$\dot{I}_0=\dot{I}(t=0)$，$e^a=A=\sqrt{\left( {\dfrac{\dot{I}_0+\gamma I_0}{\omega'}} \right)^2 - {I_0}^2}$とし，$\theta$を$\sinh{\theta}=\dfrac{I_0}{A}$，$\cosh{\theta}=\dfrac{\dot{I}_0+\gamma I_0}{\omega'A}$を満たす実数とすると，式\ref{current-eq}の解は，
+$\gamma > \omega$のとき，$\omega'=\sqrt{\gamma^2 - \omega^2}$，$I_0=I(t=0)$，$\dot{I}_0=\dot{I}(t=0)$，$e^a=A=\sqrt{\left( {\dfrac{\dot{I}_0+\gamma I_0}{\omega'}} \right)^2 - {I_0}^2}$とし，$\theta$を$\sinh{\theta}=\dfrac{I_0}{A}$，$\cosh{\theta}=\dfrac{\dot{I}_0+\gamma I_0}{\omega'A}$を満たす実数とすると，式(\ref{current-eq})の解は，
 \begin{align}
     I &= e^{-\gamma t}\left( I_0\cosh{\omega't} + \dfrac{\dot{I}_0+\gamma I_0}{\omega'}\sinh{\omega't}\right)\\
     &= e^{-\gamma t + a} \sinh\left( \omega't + \theta \right)
@@ -88,18 +88,19 @@ $\gamma > \omega$のとき，$\omega'=\sqrt{\gamma^2 - \omega^2}$，$I_0=I(t=0)$
 \begin{equation}
     \omega't + \theta = \Delta\theta
 \end{equation}
-となるときにピークを迎える．このような時間$t$を$t_0$とし，このときの電流$I$を$I_0$とすると，$t_0 = \dfrac{1}{\omega'}\left( -\theta + \Delta\theta\right)$，$I_n = (-1)^n e^{-\gamma t_0 + a} \sin \Delta\theta $となる．
+となるときにピークを迎える．このような時間$t$を$t_0$とし，このときの電流$I$を$I_0$とすると，$t_0 = \dfrac{1}{\omega'}\left( -\theta + \Delta\theta\right)$，$I_0 = e^{-\gamma t_0 + a} \sinh \Delta\theta $となる．
 
 実験では，オームの法則から電流$I$と比例関係にある抵抗器の端子電圧$V_\mathrm{R}$の波形をオシロスコープで見て，一定時間$\Delta T$毎の電圧強度の割合の変化を見て，減衰振動の場合と比べる．
 
 $V=RI$は，
 \begin{equation}
-    V = e^{-\gamma t + a} \sinh\left( \omega't + \theta \right)
+    V = Re^{-\gamma t + a} \sinh\left( \omega't + \theta \right)
 \end{equation}
 を満たすが，この対数を取ると，
-\begin{equation}
-    \ln{V} = -\gamma t_n + a + \ln{\sinh\left( \omega't + \theta \right)}
-\end{equation}
+\begin{align}
+    \ln{V} &= -\gamma t + a + \ln{\sinh\left( \omega't + \theta \right)} + \ln{R}\\
+    &= -\left( \gamma - \omega' \right)t + \ln{\left( 1-e^{-2\left( \omega't + \theta \right)} \right)} + a + \theta + \ln{R} - \ln{2} \label{eq:ODlnV}
+\end{align}
 となり，$\ln{V}$と$t_n$の関係が一次関数では表されず．減衰振動の場合と比べてグラフが直線よりも歪むことになる．
 
 \section{実験方法}
@@ -121,10 +122,10 @@ $V=RI$は，
     \label{device}
     \begin{tabular}{lrlll}
         \hline
-        機器 & 個数$\mathrm{[個]}$ & 製造会社 & 型番号 & 補足\\ \hline
+        機器 & 個数 & 製造会社 & 型番号 & 補足\\ \hline
         \csvreader[late after line=\\]{material/device.csv}
         {name=\name,num=\num,co=\co,model=\model,note=\note}
-        {\name & \num & \co & \model & \note}
+        {\name & \num 個 & \co & \model & \note}
         \hline
     \end{tabular}
     \end{center}
@@ -174,20 +175,20 @@ $V_\mathrm{R}$の負のピーク電圧の変化を表\ref{DOtable}に示す．
         \label{DOtable}
         \begin{tabular}{r|r|r}
             \hline
-            時間$t_n/\si{\second}$ & 電圧$V_n/\si{\volt}$ & 電圧比の対数$\ln\left( V_n/V_0 \right)$ \\ \hline
+            時間$t_n/\si{\micro\second}$ & 電圧$V_n/\si{\volt}$ & 電圧比の対数$\ln\left( V_n/V_0 \right)$ \\ \hline
             \csvreader[late after line=\\]{material/DOout.csv}
             {time=\time,volt=\volt,lnR=\lnR}
-            {\time & \volt & \lnR}
+            {$\time$ & $\volt$ & $\lnR$}
             \hline
         \end{tabular}
     \end{center}
 \end{table}
 
-図\ref{DO-graph}に電圧比の対数と時間のグラフを示す．
+ピークにおける時間と電圧比の対数の関係をプロットしたグラフを図\ref{DO-graph}に示す．
 \begin{figure}[htbp]
     \begin{center}
         \includegraphics[width=10cm]{material/DOgraph.eps}
-        \caption{電圧比の対数と時間の関係}
+        \caption{ピークにおける時間と電圧比の対数の関係をプロットしたグラフ}
         \label{DO-graph}
     \end{center}
 \end{figure}
@@ -199,7 +200,7 @@ $V_\mathrm{R}$の負のピーク電圧の変化を表\ref{DOtable}に示す．
 \begin{figure}[htbp]
     \begin{center}
         \includegraphics[width=10cm]{material/ODshape.eps}
-        \caption{減衰振動の波形}
+        \caption{過減衰の波形}
         \label{OD-shape}
     \end{center}
 \end{figure}
@@ -211,20 +212,20 @@ $V_\mathrm{R}$の電圧の変化を表\ref{ODtable}に示す．
         \label{ODtable}
         \begin{tabular}{r|r|r}
             \hline
-            時間$t_n/\si{\second}$ & 電圧$V_n/\si{\volt}$ & 電圧比の対数$\ln\left( V_n/V_0 \right)$ \\ \hline
+            時間$t_n/\si{\micro\second}$ & 電圧$V_n/\si{\volt}$ & 電圧比の対数$\ln\left( V_n/V_0 \right)$ \\ \hline
             \csvreader[late after line=\\]{material/ODout.csv}
             {time=\time,volt=\volt,lnR=\lnR}
-            {\time & \volt & \lnR}
+            {$\time$ & $\volt$ & $\lnR$}
             \hline
         \end{tabular}
     \end{center}
 \end{table}
 
-図\ref{OD-graph}に電圧比の対数と時間のグラフを示す．
+ピークから$10\si{\micro\second}$ずつの時間と電圧比の対数の関係をプロットしたグラフを図\ref{OD-graph}に示す．
 \begin{figure}[htbp]
     \begin{center}
         \includegraphics[width=10cm]{material/ODgraph.eps}
-        \caption{電圧比の対数と時間の関係}
+        \caption{ピークから$10\si{\micro\second}$ずつの時間と電圧比の対数の関係をプロットしたグラフ}
         \label{OD-graph}
     \end{center}
 \end{figure}
@@ -232,14 +233,92 @@ $V_\mathrm{R}$の電圧の変化を表\ref{ODtable}に示す．
 \section{考察}
 
 \subsection{抵抗値の変化に依る電流の振る舞い}
-まず，抵抗値がごく小さいときを考える．例えば，理想的に$R=0$のときには$\gamma=0$となり，\ref{sec:DO}減衰振動で議論したように電流は減衰振動する．また，抵抗値をだんだん大きくしていくと，$\gamma$が大きくなり，$\omega'$が小さくなることから，この減衰振動の周期が長くなっていく．次に，抵抗値が，$\gamma$が$\omega$に近くなるような値をとるときを考える．例えば，理論的に$\gamma=\omega$のときは\ref{sec:LD}臨界減衰で議論したように電流は振る舞うが，これは周期が限りなく大きい減衰振動ととらえることもできる．次に抵抗値がさらに大きくなると，\ref{sec:OD}過減衰で議論したように電流は過減衰する．また，抵抗値をだんだん大きくしていくと，$\gamma$が大きくなり，$\omega'$が大きくなることから
+まず，抵抗値がごく小さいときを考える．例えば，理想的に$R=0$のときには$\gamma=0$となり，\ref{sec:DO}減衰振動で議論したように電流は減衰振動する．また，抵抗値をだんだん大きくしていくと，$\gamma$が大きくなり，$\omega'$が小さくなることから，この減衰振動の周期が長くなっていく．次に，抵抗値が，$\gamma$が$\omega$に近くなるような値をとるときを考える．例えば，理論的に$\gamma=\omega$のときは\ref{sec:LD}臨界減衰で議論したように電流は振る舞うが，これは周期が限りなく大きい減衰振動ととらえることもできる．次に抵抗値がさらに大きくなると，\ref{sec:OD}過減衰で議論したように電流は過減衰する．また，抵抗値をだんだん大きくしていくと，$\gamma$が大きくなり，$\gamma - \omega' \left( = \dfrac{\omega^2}{\gamma + \sqrt{\gamma^2 - \omega^2}} \right)$が小さくなっていくことから減衰の仕方が遅くなる．この一連の流れは減衰振動における最初のひと山の幅がだんだん大きくなっていくことであると見做すとより理解が明瞭になるだろう．
 
-\subsection{考慮できていない回路定数}
-表\ref{element}の回路定数の中で観測しなかった量（N.R.）が含まれない抵抗値$R$を最も信頼できる値と見做して，これを基準に誘導係数と静電容量について，理論的には考慮できていないが，実験的には観測される分を算出する．ここで，抵抗値$R$と実験で得られる$\gamma_\mathrm{exp}$，$\omega_\mathrm{exp}$を既知であるとすると，実験的に観測される誘導係数$L_\mathrm{exp}$と静電容量$C_\mathrm{exp}$は，
+実際，図\ref{DO-shape}，図\ref{OD-shape}から，実験で抵抗の値を大きくしていくことで，抵抗にの端子電圧の波形，即ち回路に流れる電流の波形の山の幅が，大きくなったことが分かるだろう．
+
+\subsection{減衰の度合い}\label{sec:Ddeg}
+減衰振動と過減衰のそれぞれの減衰の度合いについて，理論と実験を比較する．理論値と実験値，その相対誤差を表\ref{Ddeg}に示す．
+
+\begin{table}[htbp]
+    \begin{center}
+        \caption{減衰振動と過減衰の減衰の度合い}
+        \label{Ddeg}
+        \begin{tabular}{c|rrr}
+            \hline
+            現象 & \multicolumn{1}{c}{理論値} & \multicolumn{1}{c}{実験値} & \multicolumn{1}{c}{相対誤差} \\ \hline
+            \csvreader[late after line=\\]{material/Ddeg.csv}
+            {phn=\phn,thr=\thr,exp=\exp,err=\err}
+            {\phn & $\thr\si{\second^{-1}}$ & $\exp\si{\second^{-1}}$ & $\err$}
+            \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\subsubsection{減衰振動の減衰の度合い}
+減衰振動における減衰の度合いは，ピークにおける電圧の対数の，時間に対する変化率の符号を反転させたものとする．取りも直さず，理論的な減衰の度合い$\gamma_\mathrm{thr}$は，式(\ref{eq:DOlnV})の$\gamma$に等しいので以下のように計算される．
 \begin{align}
-    L_\mathrm{exp} &= \frac{R}{2\gamma_\mathrm{exp}} & C_\mathrm{exp} = \frac{2\gamma_\mathrm{exp}}{\omega^2 R}
+    \gamma_\mathrm{thr} = \frac{R}{2L}
 \end{align}
-と表される．
+実験的な減衰の度合い$\gamma_\mathrm{exp}$は，表\ref{DOtable}から最小二乗法により以下のように計算される．
+\begin{align}
+    \gamma_\mathrm{exp} = - \left( \langle \ln\left( V_n/V_0 \right) t_n \rangle - \langle \ln\left( V_n/V_0 \right) \rangle \langle t_n \rangle \right)
+\end{align}
+また，実験値に対する理論値の相対誤差$\epsilon$は以下のように計算できる．
+\begin{align}
+    \epsilon = \frac{\gamma_\mathrm{thr} - \gamma_\mathrm{exp}}{\gamma_\mathrm{exp}}
+\end{align}
+
+\subsubsection{過減衰の減衰の度合い}
+過減衰における減衰の度合いは，電圧の対数の，時間に対する変化率の符号を反転させたものとする．取りも直さず，理論的な減衰の度合い$\gamma'_\mathrm{thr}$は，式(\ref{eq:ODlnV})の$\gamma - \omega'$に等しいので以下のように計算される．
+\begin{align}
+    \gamma'_\mathrm{thr} &= \gamma - \omega'\\
+    &= \gamma - \sqrt{\gamma^2 - \omega^2}\\
+    &= \frac{R - \sqrt{R^2 -\dfrac{4L}{C}}}{2L}
+\end{align}
+実験的な減衰の度合い$\gamma'_\mathrm{exp}$は，表\ref{ODtable}から最小二乗法により以下のように計算される．
+\begin{align}
+    \gamma'_\mathrm{exp} = - \left( \langle \ln\left( V_n/V_0 \right) t_n \rangle - \langle \ln\left( V_n/V_0 \right) \rangle \langle t_n \rangle \right)
+\end{align}
+また，実験値に対する理論値の相対誤差$\epsilon$は以下のように計算できる．
+\begin{align}
+    \epsilon = \frac{\gamma'_\mathrm{thr} - \gamma'_\mathrm{exp}}{\gamma'_\mathrm{exp}}
+\end{align}
+
+
+\subsection{減衰振動における角周波数}
+減衰振動の角周波数について，理論と実験を比較する．理論値と実験値，その相対誤差を表\ref{DOw}に示す．
+
+\begin{table}[htbp]
+    \begin{center}
+        \caption{減衰振動の角周波数}
+        \label{DOw}
+        \begin{tabular}{rrr}
+            \hline
+            \multicolumn{1}{c}{理論値} & \multicolumn{1}{c}{実験値} & \multicolumn{1}{c}{相対誤差} \\ \hline
+            \csvreader[late after line=\\]{material/DOw.csv}
+            {thr=\thr,exp=\exp,err=\err}
+            {$\thr\si{\second^{-1}}$ & $\exp\si{\second^{-1}}$ & $\err$}
+            \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
+以下にこれらの計算の仕方を示す．
+
+\subsection{誤差の検討}
+表\ref{}
+
+% \subsection{考慮できていない回路定数}
+% 表\ref{element}の回路定数の中で観測しなかった量（N.R.）が含まれない抵抗値$R$を最も信頼できる値と見做して，これを基準に誘導係数と静電容量について，理論的には考慮できていないが，実験的には観測される分を算出する．ここで，抵抗値$R$と実験で得られる$\gamma_\mathrm{exp}$，$\omega_\mathrm{exp}$を既知であるとすると，実験的に観測される誘導係数$L_\mathrm{exp}$と静電容量$C_\mathrm{exp}$は，
+% \begin{align}
+%     L_\mathrm{exp} &= \frac{R}{2\gamma_\mathrm{exp}} & C_\mathrm{exp} = \frac{2\gamma_\mathrm{exp}}{\omega^2 R}
+% \end{align}
+% と表される．
+
+% 図\ref{DO-graph}の最良近似曲線の傾きから$\gamma_\mathrm{exp}$が求まる．また，表\ref{DOtable}の時間$t_n$からピーク間差分$\Delta t_n \left( = t_{n+1} - t_n \right)$の平均$\langle \Delta t_n \rangle$が求まり，これは周期$T_\mathrm{exp}$に当たるので，角周波数$\omega'_\mathrm{exp} \left( = \dfrac{2\pi}{T_\mathrm{exp}} \right)$が求まる．先ほどの$\gamma_\mathrm{exp}$も考慮すると，$\omega_\mathrm{exp} \left( = \sqrt{{\omega'_\mathrm{exp}}^2 + {\gamma_\mathrm{exp}}^2} \right)$も求めることができる．
+
+% 次に
 
 \begin{thebibliography}{99}
     \bibitem{LCR} AD-5826/AD-5827 LCR メータ，取扱説明書ダウンロード | サポート | 株式会社エー・アンド・デイ，株式会社エー・アンド・デイ　A\&D Company, Limited，株式会社エー・アンド・デイ，2023-06-28閲覧，\url{https://www.aandd.co.jp/pdf_storage/manual/sp/m_ad5826_ad5827.pdf}．

@@ -1,8 +1,8 @@
-PWD c:/Users/mokan/data/tmp/Physics Laboratory/electric circuit
+PWD c:/Users/mokan/data/tmp/Physics-Laboratory/electric circuit
 INPUT c:/texlive/2023/texmf.cnf
 INPUT c:/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2023/texmf-var/web2c/euptex/uplatex.fmt
-INPUT c:/Users/mokan/data/tmp/Physics Laboratory/electric circuit/main.tex
+INPUT c:/Users/mokan/data/tmp/Physics-Laboratory/electric circuit/main.tex
 OUTPUT main.log
 INPUT c:/texlive/2023/texmf-dist/tex/latex/plautopatch/plautopatch.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/plautopatch/plautopatch.sty
@@ -125,18 +125,6 @@ INPUT c:/texlive/2023/texmf-dist/tex/latex/tools/shellesc.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/tools/shellesc.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/tools/shellesc.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/tools/shellesc.sty
-INPUT c:/texlive/2023/texmf-dist/tex/latex/tools/dcolumn.sty
-INPUT c:/texlive/2023/texmf-dist/tex/latex/tools/dcolumn.sty
-INPUT c:/texlive/2023/texmf-dist/tex/latex/tools/dcolumn.sty
-INPUT c:/texlive/2023/texmf-dist/tex/latex/tools/dcolumn.sty
-INPUT c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
-INPUT c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
-INPUT c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
-INPUT c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
-INPUT c:/texlive/2023/texmf-dist/tex/latex/platex-tools/plarray.sty
-INPUT c:/texlive/2023/texmf-dist/tex/latex/platex-tools/plarray.sty
-INPUT c:/texlive/2023/texmf-dist/tex/latex/platex-tools/plarray.sty
-INPUT c:/texlive/2023/texmf-dist/tex/latex/platex-tools/plarray.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/siunitx/siunitx.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/siunitx/siunitx.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/siunitx/siunitx.sty
@@ -161,6 +149,14 @@ INPUT c:/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 INPUT c:/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 INPUT c:/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 INPUT c:/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/platex-tools/plarray.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/platex-tools/plarray.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/platex-tools/plarray.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/platex-tools/plarray.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/plautopatch/plsiunitx.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/plautopatch/plsiunitx.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/plautopatch/plsiunitx.sty
@@ -239,6 +235,10 @@ INPUT ./material/DOshape.eps
 INPUT ./material/DOshape.eps
 INPUT material/DOshape.eps
 INPUT material/DOshape.eps
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0500.tfm
 INPUT material/DOout.csv
 INPUT ./material/DOgraph.eps
 INPUT ./material/DOgraph.eps
@@ -253,7 +253,16 @@ INPUT ./material/ODgraph.eps
 INPUT ./material/ODgraph.eps
 INPUT material/ODgraph.eps
 INPUT material/ODgraph.eps
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0900.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm
+INPUT material/Ddeg.csv
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
+INPUT material/DOw.csv
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT main.aux

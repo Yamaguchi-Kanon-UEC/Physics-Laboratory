@@ -1,10 +1,10 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.uptex) (TeX Live 2023) (preloaded format=uplatex 2023.6.5)  1 JUL 2023 20:19
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.uptex) (TeX Live 2023) (preloaded format=uplatex 2023.6.5)  7 JUL 2023 10:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/mokan/data/tmp/Physics Laboratory/electric circuit/main.tex"
-(c:/Users/mokan/data/tmp/Physics Laboratory/electric circuit/main.tex
+**"c:/Users/mokan/data/tmp/Physics-Laboratory/electric circuit/main.tex"
+(c:/Users/mokan/data/tmp/Physics-Laboratory/electric circuit/main.tex
 pLaTeX2e <2023-02-14u04>+1 (based on LaTeX2e <2022-11-01> patch level 1)
 L3 programming layer <2023-05-22> (c:/texlive/2023/texmf-dist/tex/latex/plautopatch/plautopatch.sty
 Package: plautopatch 2021/12/07 v0.9q Automated patches for pLaTeX/upLaTeX
@@ -174,24 +174,11 @@ Package shellesc Info: Restricted shell escape enabled on input line 77.
 \c@csvrow=\count277
 \c@csvcol=\count278
 \csv@out=\write3
-) (c:/texlive/2023/texmf-dist/tex/latex/tools/dcolumn.sty
-Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
- (c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
-Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen175
-\ar@mcellbox=\box73
-\extrarowheight=\dimen176
-\NC@list=\toks27
-\extratabsurround=\skip54
-\backup@length=\skip55
-\ar@cellbox=\box74
-) (c:/texlive/2023/texmf-dist/tex/latex/platex-tools/plarray.sty
-Package: plarray 2021/12/11 v0.1i Tabular extension package for pLaTeX/upLaTeX
-)) (c:/texlive/2023/texmf-dist/tex/latex/siunitx/siunitx.sty
+) (c:/texlive/2023/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2023-04-13 v3.2.5 A comprehensive (SI) units package
-\l__siunitx_angle_tmp_dim=\dimen177
-\l__siunitx_angle_marker_box=\box75
-\l__siunitx_angle_unit_box=\box76
+\l__siunitx_angle_tmp_dim=\dimen175
+\l__siunitx_angle_marker_box=\box73
+\l__siunitx_angle_unit_box=\box74
 \l__siunitx_compound_count_int=\count279
  (c:/texlive/2023/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
@@ -217,20 +204,31 @@ Package pdftexcmds Info: \pdfdraftmode not found.
 \l__siunitx_number_group_first_int=\count286
 \l__siunitx_number_group_size_int=\count287
 \l__siunitx_number_group_minimum_int=\count288
-\l__siunitx_table_tmp_box=\box77
-\l__siunitx_table_tmp_dim=\dimen178
-\l__siunitx_table_column_width_dim=\dimen179
-\l__siunitx_table_integer_box=\box78
-\l__siunitx_table_decimal_box=\box79
-\l__siunitx_table_uncert_box=\box80
-\l__siunitx_table_before_box=\box81
-\l__siunitx_table_after_box=\box82
-\l__siunitx_table_before_dim=\dimen180
-\l__siunitx_table_carry_dim=\dimen181
+\l__siunitx_table_tmp_box=\box75
+\l__siunitx_table_tmp_dim=\dimen176
+\l__siunitx_table_column_width_dim=\dimen177
+\l__siunitx_table_integer_box=\box76
+\l__siunitx_table_decimal_box=\box77
+\l__siunitx_table_uncert_box=\box78
+\l__siunitx_table_before_box=\box79
+\l__siunitx_table_after_box=\box80
+\l__siunitx_table_before_dim=\dimen178
+\l__siunitx_table_carry_dim=\dimen179
 \l__siunitx_unit_tmp_int=\count289
 \l__siunitx_unit_position_int=\count290
 \l__siunitx_unit_total_int=\count291
-) (c:/texlive/2023/texmf-dist/tex/latex/plautopatch/plsiunitx.sty
+ (c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen180
+\ar@mcellbox=\box81
+\extrarowheight=\dimen181
+\NC@list=\toks27
+\extratabsurround=\skip54
+\backup@length=\skip55
+\ar@cellbox=\box82
+) (c:/texlive/2023/texmf-dist/tex/latex/platex-tools/plarray.sty
+Package: plarray 2021/12/11 v0.1i Tabular extension package for pLaTeX/upLaTeX
+)) (c:/texlive/2023/texmf-dist/tex/latex/plautopatch/plsiunitx.sty
 Package: plsiunitx 2019/06/06 v0.3 siunitx package for pLaTeX/upLaTeX
 ) (c:/texlive/2023/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -306,17 +304,14 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 File: material/circuit.eps Graphic file (type eps)
 <material/circuit.eps>
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 111.
+(Font)              scaled to size 8.32214pt on input line 112.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 111.
-
-Overfull \hbox (13.97955pt too wide) in paragraph at lines 122--130
- [][][] 
- []
-
-[3]
+(Font)              scaled to size 8.32214pt on input line 112.
+ [3]
 File: material/DOshape.eps Graphic file (type eps)
 <material/DOshape.eps>
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 4.62341pt on input line 178.
 File: material/DOgraph.eps Graphic file (type eps)
 <material/DOgraph.eps>
 File: material/ODshape.eps Graphic file (type eps)
@@ -326,21 +321,38 @@ File: material/ODgraph.eps Graphic file (type eps)
 <material/ODgraph.eps>
  [5] [6] [7]
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 245.
+(Font)              scaled to size 9.24683pt on input line 258.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 245.
+(Font)              scaled to size 9.24683pt on input line 258.
+ [8]
+LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 310.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 310.
+LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 310.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 310.
 
+
+LaTeX Warning: Reference `' on page 9 undefined on input line 310.
+
+[9]
 ***** List of packages loaded by `plautopatch': *****
  pxpgfrcs, plarray, plsiunitx.
 *****************************************************
-[8] (./main.aux) ) 
-Here is how much of TeX's memory you used:
- 8192 strings out of 476693
- 200825 string characters out of 5808465
- 1865615 words of memory out of 5000000
- 28543 multiletter control sequences out of 15000+600000
- 523805 words of font info for 93 fonts, out of 8000000 for 9000
- 934 hyphenation exceptions out of 8191
- 74i,13n,77p,1039b,768s stack positions out of 10000i,1000n,20000p,200000b,200000s
+[10] (./main.aux)
 
-Output written on main.dvi (8 pages, 23860 bytes).
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 8203 strings out of 476693
+ 200609 string characters out of 5808465
+ 1865615 words of memory out of 5000000
+ 28545 multiletter control sequences out of 15000+600000
+ 527055 words of font info for 104 fonts, out of 8000000 for 9000
+ 934 hyphenation exceptions out of 8191
+ 74i,16n,77p,1344b,876s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on main.dvi (10 pages, 29252 bytes).
