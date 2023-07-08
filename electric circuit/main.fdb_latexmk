@@ -1,11 +1,11 @@
 # Fdb version 4
-["dvipdf"] 1688693707 "main.dvi" "main.pdf" "main" 1688693711 0
-  "main.dvi" 1688693707 29252 bd8c131a9572ee2bdc610e4ec55ad2d5 "latex"
+["dvipdf"] 1688701621 "main.dvi" "main.pdf" "main" 1688701628 0
+  "main.dvi" 1688701621 29800 63c4a3bf2096d978c16a83f8d0d46153 "latex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["latex"] 1688693705 "c:/Users/mokan/data/tmp/Physics-Laboratory/electric circuit/main.tex" "main.dvi" "main" 1688693711 0
-  "c:/Users/mokan/data/tmp/Physics-Laboratory/electric circuit/main.tex" 1688693703 19689 0944a6e130909f67a9c9d1dece10570c ""
+["latex"] 1688701619 "c:/Users/mokan/data/tmp/Physics-Laboratory/electric circuit/main.tex" "main.dvi" "main" 1688701628 0
+  "c:/Users/mokan/data/tmp/Physics-Laboratory/electric circuit/main.tex" 1688701618 20140 f2f1c84c54aa5e158fb59600f94c805d ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1685967499 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0500.tfm" 1685966975 1536 b3387106d9afecbfe14bde2de6eadf47 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1685966975 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -15,7 +15,6 @@
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1685965694 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1685965694 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1685965694 996 a18840b13b499c08ac2de96a99eda4bc ""
-  "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1685966444 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1685966444 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1685966444 1524 4414a8315f39513458b80dfc63bff03a ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1685966444 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -86,8 +85,8 @@
   "c:/texlive/2023/texmf-dist/web2c/texmf.cnf" 1685965566 40967 d940221f8762fd5848760382d97d1226 ""
   "c:/texlive/2023/texmf-var/web2c/euptex/uplatex.fmt" 1685973074 7816282 c2b9495f02707e557ea7fa2950b91096 ""
   "c:/texlive/2023/texmf.cnf" 1685972870 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1688693707 4260 0563c207e8c8d82ada75f6ee7b79b638 "latex"
-  "main.tex" 1688693703 19689 0944a6e130909f67a9c9d1dece10570c ""
+  "main.aux" 1688701621 4260 22c25de86e3d95682e1ea223d200c3aa "latex"
+  "main.tex" 1688701618 20140 f2f1c84c54aa5e158fb59600f94c805d ""
   "material/DOgraph.eps" 1688083553 49119 573565b0df5d82628dccf0c7eac0c18b ""
   "material/DOout.csv" 1688635065 155 24ba06f98b581cbbdb3ae9001fd0ae52 ""
   "material/DOshape.eps" 1688025566 162811 b0711455e8e14e0d03658d40b25d345a ""

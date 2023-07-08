@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.uptex) (TeX Live 2023) (preloaded format=uplatex 2023.6.5)  7 JUL 2023 10:35
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.uptex) (TeX Live 2023) (preloaded format=uplatex 2023.6.5)  7 JUL 2023 12:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -324,35 +324,18 @@ LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
 (Font)              scaled to size 9.24683pt on input line 258.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 9.24683pt on input line 258.
- [8]
-LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 310.
-LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 310.
-LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 310.
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 310.
-
-
-LaTeX Warning: Reference `' on page 9 undefined on input line 310.
-
-[9]
+ [8] [9]
 ***** List of packages loaded by `plautopatch': *****
  pxpgfrcs, plarray, plsiunitx.
 *****************************************************
-[10] (./main.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[10] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 8203 strings out of 476693
- 200609 string characters out of 5808465
+ 8198 strings out of 476693
+ 200558 string characters out of 5808465
  1865615 words of memory out of 5000000
- 28545 multiletter control sequences out of 15000+600000
- 527055 words of font info for 104 fonts, out of 8000000 for 9000
+ 28541 multiletter control sequences out of 15000+600000
+ 526747 words of font info for 103 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  74i,16n,77p,1344b,876s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (10 pages, 29252 bytes).
+Output written on main.dvi (10 pages, 29800 bytes).

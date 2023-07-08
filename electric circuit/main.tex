@@ -16,7 +16,7 @@
 \maketitle
 
 \section{目的}
-RLC直列回路を作成し，電流の減衰振動，過減衰を観測することで，その周波数やピーク電圧を計算値と比較し，考慮できていないインピーダンスを考える．
+RLC直列回路を作成し，電流の減衰振動，過減衰を観測することで，その角周波数やピーク電圧と時間の関係を求め，実験値と計算値を比較する．
 
 \section{原理}
 
@@ -238,7 +238,7 @@ $V_\mathrm{R}$の電圧の変化を表\ref{ODtable}に示す．
 実際，図\ref{DO-shape}，図\ref{OD-shape}から，実験で抵抗の値を大きくしていくことで，抵抗にの端子電圧の波形，即ち回路に流れる電流の波形の山の幅が，大きくなったことが分かるだろう．
 
 \subsection{減衰の度合い}\label{sec:Ddeg}
-減衰振動と過減衰のそれぞれの減衰の度合いについて，理論と実験を比較する．理論値と実験値，その相対誤差を表\ref{Ddeg}に示す．
+減衰振動と過減衰のそれぞれの減衰の度合いについて，理論と実験を比較する．計算値と実験値，その相対誤差を表\ref{Ddeg}に示す．
 
 \begin{table}[htbp]
     \begin{center}
@@ -246,7 +246,7 @@ $V_\mathrm{R}$の電圧の変化を表\ref{ODtable}に示す．
         \label{Ddeg}
         \begin{tabular}{c|rrr}
             \hline
-            現象 & \multicolumn{1}{c}{理論値} & \multicolumn{1}{c}{実験値} & \multicolumn{1}{c}{相対誤差} \\ \hline
+            現象 & \multicolumn{1}{c}{計算値} & \multicolumn{1}{c}{実験値} & \multicolumn{1}{c}{相対誤差} \\ \hline
             \csvreader[late after line=\\]{material/Ddeg.csv}
             {phn=\phn,thr=\thr,exp=\exp,err=\err}
             {\phn & $\thr\si{\second^{-1}}$ & $\exp\si{\second^{-1}}$ & $\err$}
@@ -264,7 +264,7 @@ $V_\mathrm{R}$の電圧の変化を表\ref{ODtable}に示す．
 \begin{align}
     \gamma_\mathrm{exp} = - \left( \langle \ln\left( V_n/V_0 \right) t_n \rangle - \langle \ln\left( V_n/V_0 \right) \rangle \langle t_n \rangle \right)
 \end{align}
-また，実験値に対する理論値の相対誤差$\epsilon$は以下のように計算できる．
+また，実験値に対する計算値の相対誤差$\epsilon$は以下のように計算できる．
 \begin{align}
     \epsilon = \frac{\gamma_\mathrm{thr} - \gamma_\mathrm{exp}}{\gamma_\mathrm{exp}}
 \end{align}
@@ -280,14 +280,13 @@ $V_\mathrm{R}$の電圧の変化を表\ref{ODtable}に示す．
 \begin{align}
     \gamma'_\mathrm{exp} = - \left( \langle \ln\left( V_n/V_0 \right) t_n \rangle - \langle \ln\left( V_n/V_0 \right) \rangle \langle t_n \rangle \right)
 \end{align}
-また，実験値に対する理論値の相対誤差$\epsilon$は以下のように計算できる．
+また，実験値に対する計算値の相対誤差$\epsilon$は以下のように計算できる．
 \begin{align}
     \epsilon = \frac{\gamma'_\mathrm{thr} - \gamma'_\mathrm{exp}}{\gamma'_\mathrm{exp}}
 \end{align}
 
-
 \subsection{減衰振動における角周波数}
-減衰振動の角周波数について，理論と実験を比較する．理論値と実験値，その相対誤差を表\ref{DOw}に示す．
+減衰振動の角周波数について，理論と実験を比較する．計算値と実験値，その相対誤差を表\ref{DOw}に示す．
 
 \begin{table}[htbp]
     \begin{center}
@@ -295,7 +294,7 @@ $V_\mathrm{R}$の電圧の変化を表\ref{ODtable}に示す．
         \label{DOw}
         \begin{tabular}{rrr}
             \hline
-            \multicolumn{1}{c}{理論値} & \multicolumn{1}{c}{実験値} & \multicolumn{1}{c}{相対誤差} \\ \hline
+            \multicolumn{1}{c}{計算値} & \multicolumn{1}{c}{実験値} & \multicolumn{1}{c}{相対誤差} \\ \hline
             \csvreader[late after line=\\]{material/DOw.csv}
             {thr=\thr,exp=\exp,err=\err}
             {$\thr\si{\second^{-1}}$ & $\exp\si{\second^{-1}}$ & $\err$}
@@ -304,10 +303,10 @@ $V_\mathrm{R}$の電圧の変化を表\ref{ODtable}に示す．
     \end{center}
 \end{table}
 
-以下にこれらの計算の仕方を示す．
+% 以下にこれらの計算の仕方を示す．
 
 \subsection{誤差の検討}
-表\ref{}
+表\ref{Ddeg}に示すように減衰振動の減衰の度合いの相対誤差が大きいことがわかるが，同時に表\ref{DOw}に示すように減衰振動の角周波数の相対誤差は小さい．角周波数は誘導係数$L$と静電容量$C$が支配的であり，この値の誤差が小さいことから，誘導係数$L$と抵抗値$R$減衰振動における減衰の度合いの誤差は抵抗値$R$に依るところが大きいと考えられる．
 
 % \subsection{考慮できていない回路定数}
 % 表\ref{element}の回路定数の中で観測しなかった量（N.R.）が含まれない抵抗値$R$を最も信頼できる値と見做して，これを基準に誘導係数と静電容量について，理論的には考慮できていないが，実験的には観測される分を算出する．ここで，抵抗値$R$と実験で得られる$\gamma_\mathrm{exp}$，$\omega_\mathrm{exp}$を既知であるとすると，実験的に観測される誘導係数$L_\mathrm{exp}$と静電容量$C_\mathrm{exp}$は，
