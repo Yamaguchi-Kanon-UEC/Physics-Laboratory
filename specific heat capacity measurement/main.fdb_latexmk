@@ -1,11 +1,11 @@
 # Fdb version 4
-["dvipdf"] 1689911516 "main.dvi" "main.pdf" "main" 1689911518 0
-  "main.dvi" 1689911516 14344 160e716c5df9c087bd75b45789819a84 "latex"
+["dvipdf"] 1703420828 "main.dvi" "main.pdf" "main" 1703420830 0
+  "main.dvi" 1703420828 8864 36db37e4783f790eb95b403c9a76a3f0 "latex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["latex"] 1689911515 "c:/Users/mokan/data/tmp/Physics-Laboratory/gravitational accelaration measurement/main.tex" "main.dvi" "main" 1689911518 0
-  "c:/Users/mokan/data/tmp/Physics-Laboratory/gravitational accelaration measurement/main.tex" 1689911515 9904 66e32cd3f4cfc5636e93e657711a044a ""
+["latex"] 1703420827 "c:/Users/mokan/data/tmp/Physics-Laboratory/specific heat capacity measurement/main.tex" "main.dvi" "main" 1703420830 0
+  "c:/Users/mokan/data/tmp/Physics-Laboratory/specific heat capacity measurement/main.tex" 1703420821 6968 5602ef66e0f6f94dca2d0f6d9534d270 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1685967499 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0500.tfm" 1685966975 1536 b3387106d9afecbfe14bde2de6eadf47 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1685966975 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -24,12 +24,10 @@
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1685966444 1300 b62933e007d01cfd073f79b963c01526 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1685966444 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1685966444 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
-  "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss10.tfm" 1685966444 1316 b636689f1933f24d1294acdf6041daaa ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss12.tfm" 1685966444 1324 37b971caf729d7edd9cbb9f9b0ea76eb ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1685966444 1124 6c73e740cf17375f03eec0ee63599741 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1685966444 1116 933a60c408fc0a863a92debe84b2d294 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1685966444 1120 8b7d695260f3cff42e636090a8002094 ""
-  "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1685966444 768 1321e9409b4137d6fb428ac9dc956269 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm" 1685972547 812 52bd92aa20c58a398601cda6dd62c8d1 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm" 1685972547 536 5f2475e9deb198c23894800d3c5eed00 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-h.tfm" 1685972547 812 52bd92aa20c58a398601cda6dd62c8d1 ""
@@ -85,16 +83,8 @@
   "c:/texlive/2023/texmf-dist/web2c/texmf.cnf" 1685965566 40967 d940221f8762fd5848760382d97d1226 ""
   "c:/texlive/2023/texmf-var/web2c/euptex/uplatex.fmt" 1685973074 7816282 c2b9495f02707e557ea7fa2950b91096 ""
   "c:/texlive/2023/texmf.cnf" 1685972870 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1689911516 2353 bb2211780f0d4f5e35c353479e6641c1 "latex"
-  "main.tex" 1689911515 9904 66e32cd3f4cfc5636e93e657711a044a ""
-  "material/data-d.csv" 1689900963 224 18c50aea52b21280479600486fb0a7ae ""
-  "material/data-data1_1.csv" 1689910960 194 80dcf36bf3317b945a6f580d89b2ecc2 ""
-  "material/data-data1_2.csv" 1689910930 134 93cf00651264af1d1e63075e708692d0 ""
-  "material/data-raw1a.csv" 1689901275 41 55506190a754c5b7d514807243fc1108 ""
-  "material/data-raw1h.csv" 1689901282 26 121fcc7f9362d7ecff29dcd80d4c3a45 ""
-  "material/data-raw1tau.csv" 1689901288 43 146ffb962eea4c3963289710cd8d2969 ""
-  "material/figure.eps" 1689182521 60778 34effc14a2c756b8b867b4fce6890e2c ""
-  "material/search.csv" 1689302111 213 43807a0aec929ad91a672c9e13b778d8 ""
+  "main.aux" 1703420828 2199 b3d0f9dd475a07fda45cd8bb4b4fffd3 "latex"
+  "main.tex" 1703420821 6968 5602ef66e0f6f94dca2d0f6d9534d270 ""
   (generated)
   "main.aux"
   "main.dvi"

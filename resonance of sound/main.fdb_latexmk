@@ -1,0 +1,25 @@
+# Fdb version 4
+["dvipdf"] 0 "main.dvi" "main.pdf" "main" 0 -1
+  "main.dvi" 1711542156 268 f0380748ec29428bf4c0fb71903d60b4 "latex"
+  (generated)
+  "main.pdf"
+  (rewritten before read)
+["latex"] 1711638125 "c:/Users/mokan/data/tmp/Physics-Laboratory/resonance of sound/main.tex" "main.dvi" "main" 1711638125 0
+  "c:/Users/mokan/data/tmp/Physics-Laboratory/resonance of sound/main.tex" 1711638121 118 555ef86375fc7f9a6fc9406277f157c4 ""
+  "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1685967499 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1685966444 1292 21c1c5bfeaebccffdb478fd231a0997d ""
+  "c:/texlive/2023/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-h.tfm" 1685972547 812 52bd92aa20c58a398601cda6dd62c8d1 ""
+  "c:/texlive/2023/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm" 1685972547 536 5f2475e9deb198c23894800d3c5eed00 ""
+  "c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-dvips.def" 1685968357 35615 a6d1a4c99e7a18682a65dab9f3f2d901 ""
+  "c:/texlive/2023/texmf-dist/tex/platex/jsclasses/jsarticle.cls" 1685968205 61387 1c16fa09f9aa344f6b7ed4a7e2c399b2 ""
+  "c:/texlive/2023/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1685968205 5585 8e4615c54073c390d14154b29cee89cb ""
+  "c:/texlive/2023/texmf-dist/web2c/texmf.cnf" 1685965566 40967 d940221f8762fd5848760382d97d1226 ""
+  "c:/texlive/2023/texmf-var/web2c/euptex/uplatex.fmt" 1685973074 7816282 c2b9495f02707e557ea7fa2950b91096 ""
+  "c:/texlive/2023/texmf.cnf" 1685972870 713 e69b156964470283e0530f5060668171 ""
+  "main.aux" 1711638125 8 a94a2480d3289e625eea47cd1b285758 "latex"
+  "main.tex" 1711638121 118 555ef86375fc7f9a6fc9406277f157c4 ""
+  (generated)
+  "main.aux"
+  "main.dvi"
+  "main.log"
+  (rewritten before read)

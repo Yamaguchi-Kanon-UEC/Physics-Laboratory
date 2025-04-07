@@ -1,8 +1,8 @@
-PWD c:/Users/mokan/data/tmp/Physics-Laboratory/gravitational accelaration measurement
+PWD c:/Users/mokan/data/tmp/Physics-Laboratory/specific heat capacity measurement
 INPUT c:/texlive/2023/texmf.cnf
 INPUT c:/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2023/texmf-var/web2c/euptex/uplatex.fmt
-INPUT c:/Users/mokan/data/tmp/Physics-Laboratory/gravitational accelaration measurement/main.tex
+INPUT c:/Users/mokan/data/tmp/Physics-Laboratory/specific heat capacity measurement/main.tex
 OUTPUT main.log
 INPUT c:/texlive/2023/texmf-dist/tex/latex/plautopatch/plautopatch.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/plautopatch/plautopatch.sty
@@ -233,23 +233,8 @@ INPUT c:/texlive/2023/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-h.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0500.tfm
-INPUT ./material/figure.eps
-INPUT ./material/figure.eps
-INPUT material/figure.eps
-INPUT material/figure.eps
+OUTPUT main.dvi
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-h.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
-OUTPUT main.dvi
-INPUT c:/texlive/2023/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm
-INPUT c:/texlive/2023/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
-INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
-INPUT material/data-d.csv
-INPUT material/data-raw1h.csv
-INPUT material/data-raw1tau.csv
-INPUT material/data-raw1a.csv
-INPUT material/data-data1_1.csv
-INPUT material/data-data1_2.csv
-INPUT material/search.csv
-INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT main.aux

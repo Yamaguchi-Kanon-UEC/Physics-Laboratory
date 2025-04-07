@@ -1,0 +1,149 @@
+\RequirePackage{plautopatch}
+\documentclass[uplatex,dvipdfmx,a4paper,10pt]{jsarticle}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathcomp}
+\usepackage{csvsimple}
+\usepackage{siunitx}
+\usepackage{url}
+
+
+\title{比熱の測定}
+\author{電気通信大学 I\hspace{-1.2pt}I\hspace{-1.2pt}I類\\
+2313213 山口海音}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{目的}
+先ず，ニュートンの冷却の法則が成り立つことを確認する．次に，ジュール熱の存在を認め，熱力学第一法則がなりたつことを仮定したうえで，水とアルコールの比熱を求める．
+
+\section{原理}
+
+\subsection{ニュートンの冷却の法則}
+物体の温度の時間変化率$\dfrac{\Delta T}{\Delta t}$は物体と周囲の温度差$T-T_{\mathrm{env}}$に比例する．これをもって物体ごとに決まる比例定数$k$を定める．これは，粘性抵抗を受けて落下する物体の運動にちょうど等しいので，温度は時間に対して以下のように変化する．
+\begin{align}
+    \frac{T-T_\mathrm{env}}{T_0-T_\mathrm{env}}=e^{-kt}
+\end{align}
+この法則を確認するためには，$\ln(T-T_\mathrm{env})$と$t$の関係が$1$次方程式で表せるか，あるいは，近似できるかを確認すればよい．
+%ニュートンがdQなど使っていないことを示す文献
+
+\subsection{ジュール熱}
+抵抗値$R$の物質に電流$I$を$t$秒間流し続けると，熱$Q=RI^2t$が生じる．
+
+\subsection{熱力学第一法則}
+内部エネルギーの変化$\Delta U$は，入ってきた熱量$Q$，内部気体がした仕事$W$の差分に等しい．
+
+\subsection{熱容量}
+物質の温度を$\Delta T$だけ上げるのに必要な熱量$Q$は$\Delta T$に比例する．これをもって物体ごとに決まる比例定数$L$を定める．
+% 熱量とは
+% 何故比例定数をそう入れたか
+$C$は体積に比例する，即ちその物質の質量に比例する．これをもって物質ごとに決まる比例定数$c$を定める．
+これを実験的に求めるには，ある物体に電流を加えて生じさせたジュール熱を全て物質の加熱に使えばよい．即ち，以下が成り立つ．
+\begin{align}
+    C\Delta T = Q = RI^2t
+\end{align}
+
+
+\section{実験方法}
+\subsection{比熱の測定}
+第1に，抵抗線を作成し，抵抗値を測定する．
+第2に，凡そ$RI^2 = 12\mathrm{W} $となるように電流$I$を設定し，測定する．
+第3に，熱量計と用意した水の質量を測定する．
+第4に，恒温槽内にスペーサと水を入れた熱量計と温度計を入れる．
+第5に，ゆっくり攪拌し，容器内の温度を一定に保．
+第6に，電流を流し始め，温度変化$\Delta T = 0.3℃$毎に時間を記録する．
+第7に，温度変化$\Delta T = 15℃$ほどになった段階で，記録を終了する．
+第8に，残った水の質量を測定する．
+
+次に，水をエタノールに変えて 1 - 7 について同様の実験をする．
+
+\subsection{ニュートンの冷却の法則}
+第1に，前項で加熱したエタノールを，電流は止めてそのまま攪拌を続けて記録する．
+第2に，温度変化$\Delta T = -10℃$ほどになった段階で，記録を終了する．
+第3に，残ったエタノールの質量を測定する．
+
+\section{実験結果}
+抵抗線の抵抗値，設定した電流，熱量計の比熱，熱量計の質量，水の質量，エタノールの質量を表\ref{tb:const}に示す．
+
+\begin{table}[htbp]
+    \begin{center}
+        \caption{比熱を求めるために必要な定数}%naming びみょすぎｗ
+        \label{tb:const}
+        \begin{tabular}{r|r}
+            \hline
+            データ名 & 測定値\\
+            \hline
+            抵抗値 & $(4.413 \pm 0.004)\mathrm{Ω}$\\
+            電流 & $(1.675 \pm 0.007)\mathrm{A}$\\
+            熱量計の比熱 & $0.383 \mathrm{Jg^{-1}K^{-1}}$\\ %ソースを示せ．
+            熱量計の質量 & $(55.06\pm 0.01) \mathrm{g}$\\
+            水の質量 & $(179.35 \pm 0.02) \mathrm{g}$\\
+            エタノールの質量 & $(139.94 \pm 0.01)\mathrm{g}$\\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
+水を加熱したときの時間$t$に対する水温$T$の変化を図$1$に示す．
+
+このグラフの傾き$a$と不確かさ$\Delta a$は図$1$のグラフの傾きを読んで以下のようである．
+
+\begin{align}
+    a = \frac{T}{t}\\
+    \frac{\Delta a}{a} = \sqrt{}\\
+\end{align}
+
+\begin{table}[htbp]
+    \begin{center}
+        \caption{比熱を求めるために必要な定数}%naming びみょすぎｗ
+        \label{tb:const}
+        \begin{tabular}{r|r}
+            \hline
+            データ名 & 測定値\\
+            \hline
+            抵抗値 & $(4.413 \pm 0.004)\mathrm{Ω}$\\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
+エタノールを加熱したときの時間$t$に対する水温$T$の変化を図$2$に示す．
+
+得られた比熱を表\ref{tb:heatcap}に示す．
+\begin{table}[htbp]
+    \begin{center}
+        \caption{比熱の測定値と文献値}
+        \label{tb:heatcap}
+        \begin{tabular}{r|rr}
+            \hline
+            データ名 & 測定値 & 文献値\\
+            \hline
+            水 &  & \\
+            アルコール & & \\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
+エタノールを冷却したときの時間$t$に対する水温$T$の変化を図$3$に示す．
+エタノールを冷却したときの時間$t$に対する水温の変化の対数$\ln(T-T_\mathrm{env})$を図$4$に示す．
+ただし，エタノールを冷却したときに攪拌しなかった．また，途中で一度だけ攪拌した．
+
+\section{考察}
+\subsection{冷却実験における試料の体積}
+\subsection{試料の体積変化による誤差}
+\subsection{考慮しきれていない因子}
+空気，スペーサ，抵抗線，はんだ，
+\subsection{結果の検討}
+
+% \begin{thebibliography}{99}
+%     \bibitem{phy} \verb|伊東敏雄，『な～るほど！の力学』，東京学術図書出版社2003．|
+%     \bibitem{jihou} \verb|国土地理院，『国土地理院時報』，131集，国土地理院，2018．|
+%     \bibitem{sci} \verb|『日本各地の重力実測値』，理科年表プレミアム - コンテンツ表示，理科年表オフィシャルサイト(国立天文台・丸善出版)，2023-07-13閲覧．|
+%     \bibitem{keido} \verb|『東京都 市区町村の役所・役場及び東西南北端点の経度緯度(世界測地系)』，国土地理院，2023-07-14閲覧，https://www.gsi.go.jp/common/000230949.pdf．|
+% \end{thebibliography}
+
+\end{document}

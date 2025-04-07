@@ -1,0 +1,7 @@
+data,mean,uc
+l/\si{\meter},0.8727,-
+a/\si{\meter},0.0123,-
+d/\si{\meter},0.02643,0.000029
+h'/\si{\meter},1.0293,0.00025
+{\tau}_i/\si{\second},171.966,8.7
+T_0/\si{\second},2.000000,0.000001

@@ -1,0 +1,21 @@
+\RequirePackage{plautopatch}
+\documentclass[uplatex,a4paper]{jsarticle}
+\usepackage{amsmath}
+\usepackage{siunitx}
+
+\begin{document}
+    神のみぞ知る真の値$X$と，測定データ${x_i}$の差${x_i -X}$を誤差という．誤差の平均を標準偏差$\sigma$という．
+    \begin{align}
+        \sigma = \sqrt{\frac{1}{N} \sum_{i=1}^{N}(x_i - X)^2}
+    \end{align}
+    これは$\left| \sum_{i\neq j}(x_i -X)(x_j - X) \right| << N$ならば，
+    \begin{align}
+        \sigma = \sqrt{\frac{1}{N-1} \sum_{i=1}^{N}(x_i - \langle x\rangle)^2}
+    \end{align}
+    \begin{align}
+        \Delta \langle x\rangle = \frac{\Delta x}{\sqrt{N}} = \sqrt{\frac{1}{N(N-1)} \sum_{i=1}^{N}(x_i - \langle x\rangle)^2}
+    \end{align}
+    \begin{align}
+        \tilde{a}
+    \end{align}
+\end{document}

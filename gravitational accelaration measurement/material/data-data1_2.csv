@@ -1,0 +1,5 @@
+data,mean,uc
+\theta/\si{\radian},0.0141,-
+r/\si{\meter},0.01321,0.000015
+h/\si{\meter},1.0161,0.00025
+T/\si{\second},2.0235,0.0012

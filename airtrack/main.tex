@@ -1,0 +1,102 @@
+\documentclass[uplatex,dvipdfmx,a4paper]{jsarticle}
+\usepackage{amsmath}
+\usepackage{csvsimple}
+\usepackage{siunitx}
+
+\title{エア・トラックによる力学実験}
+\author{山口海音}
+\date{\today}
+\begin{document}
+\maketitle
+\section{目的}
+滑らかな床の上の物体の運動を見ることで，2種類の空気抵抗を観察するニュートン問題に取り組む．そのついでに反発係数の速さの依存性と運動量保存則がどれほど，成り立っているかをみる．
+
+\section{原理}
+ある程度大きさを持った物体の落下運動では速度に上限がある．その上限，終端速度を見ることで物体の質量$m$に比例するようなものと$\sqrt{m}$に比例する，あるいはその物理量が支配的である，ようなものがあるので，抵抗力$\lambda v$と$\kappa v^2$が想定された．これは速さ$v$に因る抵抗力$F(v)$を2次まで近似したものだと思っても今のところ差し支えない．これらに粘性抵抗と慣性抵抗という名前がつくのはまた別のお話♡．
+
+これらを踏まえると床の上での直線運動は以下でかけそうだね．
+
+\begin{equation}
+    \label{eq:eom}
+    ma = -\mu mg\cos\theta -\lambda v - \kappa v^2 \pm mg\sin\theta
+\end{equation}
+
+これを基に$\lambda$，$\kappa$が求まるような実験をしたい！良いエアトラック，即ち，$\mu=0$，$\theta=0$と見做せるようなものを使えば，式(\ref{eq:linear})が成り立つので，$-a/v - v$グラフの傾きと切片でもって$\lambda$，$\kappa$を決定できる．
+
+\begin{equation}
+    \label{eq:linear}
+    -\frac{a}{v} = \frac{\lambda}{m} + \frac{\kappa}{m}v
+\end{equation}
+
+ところがどっこい，そんな都合の良いエアトラックは易々とは用意できない．そう，作るしかない．自分たちの手で！そんなわけでエアトラックの調整をする．$\theta\ll 1$の下で式(\ref{eq:eom})を書き直すと，式(\ref{eq:approx})のように大雑把に$\theta$が求まる．
+そもそもの目的が，$\theta$をなるべく小さくして式(\ref{eq:linear})が有効になるようにすることであるので，そこまでの精度は必要ない．
+
+\begin{equation}
+    \label{eq:approx}
+    -\frac{a}{g} = \mp\sin\theta + \mu  + \frac{\lambda}{mg}v + \frac{\kappa}{mg}v^2
+\end{equation}
+
+
+\subsection{平均速度と平均加速度}
+
+上記までの速さ$v$は，滑走体の長さ$\Delta s$とセンサが遮られた時間$\Delta t$をもって，$\bar{v}=\Delta s/\Delta t$で近似する．$a$は，センサ間距離$s$と速さ$v_1$，$v_2$をもって$\bar{a}=({v_2}^2 - {v_1}^2)/2s$で近似する．
+
+\section{実験方法}
+
+\subsection{水平調整}
+
+センサ，カウンタ，送風機をセットしたのち，滑走台の上と滑走隊の接触面をアルコールを浸したティッシュで拭う．次にリングを滑走台の端にぶら下げて，ロール方向の傾きを調整した．次に式(\ref{eq:linear})からピッチ方向の傾きを調整した．
+
+\subsection{$\lambda$，$\kappa$の決定}
+
+センサ間を滑走体を行き来させて$a/v$と$v$の関係を見た！
+
+\subsection{$\lambda$，$\kappa$の活用}
+
+先求めた$\lambda$，$\kappa$を活かして他の物理現象を見てみた！
+\subsubsection{反発係数}
+
+\section{実験結果}
+
+実験結果を表\ref{tb:result}に示す．
+
+\begin{table}[htbp]
+    \centering
+    \label{tb:result}
+    \caption{実験データ}
+    \begin{tabular}{crrrrrrrr}
+        \hline
+        方向 & $\Delta t_1/\si{s}$ & $\Delta t_2/\si{s}$ & $v_1/\si{m.s^{-1}}$ & $v_2/\si{m.s^{-1}}$ & $\bar{v}/\si{m.s^{-1}}$ & $\bar{a}/\si{m.s^{-2}}$ & $10^3\bar{a}/g$ & $\bar{a}\cdot\bar{v}^{-1}/\si{s^{-1}}$\\
+        \hline
+        \csvreader[late after line=\\]{material/result.csv}
+        {dir=\dir,to=\to,tt=\tt,vo=\vo,vt=\vt,v=\v,a=\a,ag=\ag,av=\av}
+        {$\dir$ & $\to$ & $\tt$ & $\vo$ & $\vt$ & $\v$ & $\a$ & $\ag$ & $\av$}
+        \hline
+    \end{tabular}
+\end{table}
+
+ここから滑走台の調整のために$a/g$と$v$の関係を示すグラフを図$1$に示す．このグラフから$\theta$は十分に小さいと判断して，調整は行わなかった．
+
+$a/v$と$v$の関係を示すグラフを図$2$に示す．ここから$\lambda/m$と$\kappa/m$を読んで，$\lambda$，$\kappa$を表\ref{tb:val}にまとめる．
+
+\begin{table}[htbp]
+    \centering
+    \label{tb:val}
+    \caption{$\lambda$と$\kappa$が知りたい}
+    \begin{tabular}{lr}
+        \hline
+        物理量 & 値\\
+        \hline
+        \csvreader[late after line=\\]{material/coef.csv}
+        {sym=\sym, val=\val,unc=\unc,unit=\unit}
+        {$\sym$ & $\val \pm \unc \mathrm{\unit}$}
+        \hline
+    \end{tabular}
+\end{table}
+
+
+\section{考察}
+
+流体力学によると，粘性に由来する抵抗力は，粘性係数$\eta$，滑走体と滑走台の間の空気層の，面積$S$，厚さ$d_a$をもって$ \eta S v / d_a$らしい．今回の結果を踏まえると，$\eta$が分かれば，$d_a = \eta S/\lambda$が求まる．
+
+\end{document}
